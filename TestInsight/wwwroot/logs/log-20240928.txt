@@ -1,0 +1,187 @@
+2024-09-28 12:42:07.150 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 12:42:07.297 +05:00 [INF] Now listening on: http://localhost:5043
+2024-09-28 12:42:07.322 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 12:42:07.323 +05:00 [INF] Hosting environment: Development
+2024-09-28 12:42:07.323 +05:00 [INF] Content root path: /home/samurai/RiderProjects/TestInsight/TestInsight
+2024-09-28 12:43:06.485 +05:00 [INF] Application is shutting down...
+2024-09-28 12:43:09.519 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 12:43:25.746 +05:00 [INF] Text xabar qabul qilindi: /start
+2024-09-28 13:54:07.834 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.RequestException: Request timed out
+ ---> System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---2024-09-28 13:58:13.906 +05:00 [INF] Application is shutting down...
+hreading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Operation canceled.
+ ---> System.Net.Sockets.SocketException (125): Operation canceled
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Telegram.Bot.TelegramBotClient.<MakeRequestAsync>g__SendRequestAsync|21_0[TResponse](HttpClient httpClient, HttpRequestMessage httpRequest, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Telegram.Bot.TelegramBotClient.<MakeRequestAsync>g__SendRequestAsync|21_0[TResponse](HttpClient httpClient, HttpRequestMessage httpRequest, CancellationToken cancellationToken)
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:14.856 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: terminated by setWebhook request
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:17.979 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:18.074 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:21.240 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:21.335 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:24.433 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:24.528 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:27.626 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:27.721 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:30.819 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:30.914 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:34.054 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:34.158 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:37.255 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:37.350 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:40.448 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:40.651 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:54:43.751 +05:00 [ERR] Polling xatolik yuz berdi
+Telegram.Bot.Exceptions.ApiRequestException: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
+   at Telegram.Bot.TelegramBotClient.MakeRequestAsync[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at Telegram.Bot.Polling.DefaultUpdateReceiver.ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken)
+2024-09-28 13:58:20.879 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 13:58:28.614 +05:00 [INF] Text xabar qabul qilindi: /start
+2024-09-28 15:07:45.515 +05:00 [INF] Text xabar qabul qilindi: /start
+ Ctrl+C to shut down.
+2024-09-28 13:58:21.067 +05:00 [INF] Hosting environment: Development
+2024-09-28 13:58:21.067 +05:00 [INF] Content root path: /home/samurai/RiderProjects/TestInsight/TestInsight
+2024-09-28 15:09:32.570 +05:00 [INF] Application is shutting down...
+2024-09-28 15:10:55.446 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 15:10:55.582 +05:00 [INF] Now listening on: http://localhost:5043
+2024-09-28 15:10:55.599 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 15:10:55.601 +05:00 [INF] Hosting environment: Development
+2024-09-28 15:10:55.601 +05:00 [INF] Content root path: /home/samurai/RiderProjects/TestInsight/TestInsight
+2024-09-28 15:27:26.153 +05:00 [INF] Application is shutting down...
+2024-09-28 15:27:29.781 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 15:27:29.930 +05:00 [INF] Now listening on: http://localhost:5043
+2024-09-28 15:27:29.944 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 15:27:29.949 +05:00 [INF] Hosting environment: Development
+2024-09-28 15:27:29.949 +05:00 [INF] Content root path: /home/samurai/RiderProjects/TestInsight/TestInsight
+2024-09-28 15:31:58.203 +05:00 [INF] Application is shutting down...
+2024-09-28 15:32:00.184 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 15:32:00.379 +05:00 [INF] Now listening on: http://localhost:5043
+2024-09-28 15:32:00.389 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 15:32:00.389 +05:00 [INF] Hosting environment: Development
+2024-09-28 15:32:00.390 +05:00 [INF] Content root path: /home/samurai/RiderProjects/TestInsight/TestInsight
+2024-09-28 15:32:38.153 +05:00 [INF] Application is shutting down...
+2024-09-28 15:32:40.235 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 15:32:40.446 +05:00 [INF] Now listening on: http://localhost:5043
+2024-09-28 15:32:40.453 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 15:32:40.453 +05:00 [INF] Hosting environment: Development
+2024-09-28 15:32:40.453 +05:00 [INF] Content root path: /home/samurai/RiderProjects/TestInsight/TestInsight
+2024-09-28 15:50:24.225 +05:00 [INF] Application is shutting down...
+2024-09-28 15:53:55.284 +05:00 [INF] Executed DbCommand (133ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE "TestInsightDb";
+2024-09-28 15:53:55.399 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2024-09-28 15:53:55.438 +05:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-09-28 15:53:55.440 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-09-28 15:53:55.451 +05:00 [INF] Applying migration '20240928105033_InitialMigration'.
+2024-09-28 15:53:55.469 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "Username" text NOT NULL,
+    "TelegramId" bigint NOT NULL,
+    CONSTRAINT "PK_Users" PRIMARY KEY ("Id")
+);
+2024-09-28 15:53:55.470 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240928105033_InitialMigration', '8.0.8');
+2024-09-28 16:08:23.536 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 16:09:34.613 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 16:13:01.814 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 16:16:12.027 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 16:17:55.143 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 16:17:55.245 +05:00 [INF] Now listening on: http://localhost:5043
+2024-09-28 16:17:55.256 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 16:17:55.256 +05:00 [INF] Hosting environment: Development
+2024-09-28 16:17:55.256 +05:00 [INF] Content root path: /home/samurai/RiderProjects/TestInsight/TestInsight
+2024-09-28 16:23:17.632 +05:00 [INF] Application is shutting down...
+2024-09-28 18:14:37.466 +05:00 [INF] Bot pollingni boshladi...
+2024-09-28 18:14:53.230 +05:00 [INF] Yangilanish turi: Message
+2024-09-28 18:14:57.639 +05:00 [INF] Yangilanish turi: Message
+started. Press Ctrl+C to shut down.
+2024-09-28 18:14:37.555 +05:00 [INF] Hosting environment: Development
+2024-09-28 18:14:37.555 +05:00 [INF] Content root path: /home/samurai/RiderProjects/TestInsight/TestInsight
+2024-09-28 18:16:16.017 +05:00 [INF] Application is shutting down...

@@ -1,0 +1,6 @@
+@TestInsight_HostAddress = http://localhost:5043
+
+GET {{TestInsight_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
